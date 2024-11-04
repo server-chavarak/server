@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=K2D');
+@import url('https://fonts.googleapis.com/css?family=Maitree');
+
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    
+}
+ h1 {
+    font-size: 20px;
+    font-family: K2D;
+    font-weight: bold;
+    margin-left: 48%;
+    margin-top: 1%;
+}
+
+
+.edit-button, .delete-button {
+    margin-left: 15px;
+    
+}
+
+.edit-button{
+    color: #1050c5;
+}
+
+.delete-button {
+    color: #d01111;
+}
+#searchForm  {
+   margin-left: 75%;
+   margin-top: 1%;
+   
+}
+#searchForm input[type="text"] {
+    padding: 1px 5px;
+    font-size: 14px;
+    font-family: 'Maitree', sans-serif;
+}
+
+#searchForm button {
+    padding: 0 3px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'K2D', sans-serif;
+}
+.table-container {
+    max-height: 440px;
+    overflow-y: auto;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    position: relative;
+}
+
+thead th {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0; 
+    background-color: #142338;
+    color: white; 
+    z-index: 0;
+    border-bottom: 2px solid #ddd; 
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #bdbdbd; 
+    padding: 8px; 
+    text-align: left;
+    background-color: #f8f8f8;
+    font-family: Maitree;
+}
+th {
+    background-color: #243651;
+    color: white;
+    z-index: 500
+}
+td {
+    text-align: left;
+}
+
+td:first-child {
+    width: 7%;
+    text-align: center;
+}
+td:nth-child(2)  {
+    width: 15%;
+}
+td:nth-child(3) {
+    width: 20%;
+}
+td:nth-child(4) {
+    width: 10%;
+    text-align: center;
+    
+}
+td:nth-child(5) {
+    width: 20%;
+}
+td:nth-child(6){
+    width: 7%;
+    text-align: center;
+}
+
+
+
+#addButton{
+    background-color: #148918; 
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: K2D;
+    margin-left: 95px;
+    
+}
+
+.modal-delete {
+    background-color: #fff;
+    padding: 80px 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 30%;
+   
+}
+
+.modal-delete p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #333;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+
+button.delete {
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.approve {
+    background-color: #2d9a47;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.delete:hover {
+    background-color: #bc0a0a;
+}
+
+button.approve:hover {
+    background-color: #148918;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+#addcustomer {
+    background-color: #f5f5f5;
+    padding: 15px 25px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #979797; 
+    margin-left: 25%;
+    margin-top: 1%;
+}
+#addcustomer h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'K2D', sans-serif;
+    margin-left: 45%;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    flex: 0 0 120px; /* กำหนดความกว้างของ label */
+    font-family: Maitree;
+    margin-left: 5%;
+    text-align: left;
+}
+
+#addcustomer label {
+    flex: 0 0 120px; /* กำหนดความกว้างของ label */
+    font-family: Maitree;
+    margin-right: 10px;
+    text-align: left;
+   
+}
+
+#addcustomer input[type="text"], 
+#addcustomer input[type="email"],
+#addcustomer input[type="datetime-local"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #e1dfdf;
+    border-radius: 4px;
+    font-family: 'Maitree', sans-serif;
+    background-color: #ffffff;
+    font-size: 15px;
+}
+
+.back-link {
+    color: #a20c8c;
+    margin-left: 73%;
+    font-family: Maitree;
+}
+
+.back-link:hover {
+   color: #cc2121;
+}
+
+
+.back{
+    color: #a20c8c;
+    margin-left: 7%;
+    font-family: Maitree;
+}
+
+.back:hover {
+   color: #cc2121;
+}

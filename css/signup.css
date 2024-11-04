@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=K2D');
+@import url('https://fonts.googleapis.com/css2?family=Maitree');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.example {
+    filter: opacity(50%);
+    opacity: 0.5;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+header {
+    display: flex;
+    background-color: #142338;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px; /* ปรับความสูงของ header */
+    padding: 0 20px;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* ตั้งค่า z-index เพื่อให้อยู่เหนือเนื้อหาอื่น ๆ */
+}
+
+header p {
+    color: aliceblue;
+    margin: 1rem 1rem 1rem 0;
+}
+
+header a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.back-icon {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: K2D;
+  }
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 80px; /* ปรับตามความสูงของ header */
+    font-family: K2D;
+    color: rgb(0, 0, 0);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.title img {
+    max-width: 15%;
+    height: auto;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 700px;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px; /* เพิ่ม padding เพื่อให้มีช่องว่างภายใน form */
+    
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.form-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #f1f1f1;
+    font-family: Maitree;
+    font-size: 15px;
+}
+
+
+
+.toggle-password {
+    position: absolute;
+    right: 14px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.toggle-password i{
+    color: #787777;
+    margin-top: 250%;
+}
+
+
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    top: 50px;
+    width: 100%;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    border: none;
+    background-color: #006ad4;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+    font-family: K2D;
+    
+   
+  
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border: 2px solid #000000; /* เปลี่ยนสีขอบเมื่อคลิก */
+}
+
+input::placeholder,
+select::placeholder {
+    color: #686868;
+}
+
+.form-group select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: #686868;
+}
+
+.form-group select option {
+    color: #000000;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .signup-form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 960px) {
+    .signup-form {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 540px) {
+    .signup-form {
+        width: 80%;
+    }
+    .title img {
+        max-width: 35%;
+    }
+}

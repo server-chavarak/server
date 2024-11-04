@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css?family=K2D');
+@import url('https://fonts.googleapis.com/css?family=Maitree');
+
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    
+}
+ h1 {
+    font-size: 20px;
+    font-family: K2D;
+    font-weight: bold;
+    margin-left: 48%;
+    margin-top: 2%;
+}
+
+
+.edit-button, .delete-button {
+    margin-left: 15px;
+    
+}
+
+.edit-button{
+    color: #1050c5;
+}
+
+.delete-button {
+    color: #d01111;
+}
+#searchForm  {
+   margin-left: 75%;
+   margin-top: 1%;
+   
+}
+#searchForm input[type="text"] {
+    padding: 1px 5px;
+    font-size: 14px;
+    font-family: 'Maitree', sans-serif;
+}
+
+#searchForm button {
+    padding: 0 3px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'K2D', sans-serif;
+}
+.table-container {
+    max-height: 440px;
+    overflow-y: auto;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    position: relative;
+}
+
+thead th {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0; 
+    background-color: #142338;
+    color: white; 
+    z-index: 0;
+    border-bottom: 2px solid #ddd; 
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #8a8a8a; 
+    padding: 8px; 
+    text-align: left;
+    background-color: #f8f8f8;
+    font-family: Maitree;
+}
+th {
+    background-color: #243651;
+    color: white;
+    z-index: 500
+}
+td {
+    text-align: left;
+}
+
+td:first-child {
+    width: 7%;
+    font-size: 14px;
+    text-align: center;
+}
+td:nth-child(2) {
+    width: 15%;
+}
+td:nth-child(3) {
+    width: 5%;
+    text-align: center;
+}
+td:nth-child(4) {
+    width: 30%;
+}
+td:nth-child(5) {
+    width: 6%;
+    text-align: center;
+}
+td:nth-child(6){
+    width: 7%;
+    text-align: center; 
+    font-size: 14px;
+}
+td:nth-child(7){
+    width: 8%; 
+    text-align: center; 
+}
+td:nth-child(8){
+    width: 10%; 
+    text-align: center; 
+}
+td:nth-child(9){
+    width: 6%; 
+    text-align: center; 
+}
+
+
+#addButton{
+    background-color: #148918; 
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: K2D;
+    margin-left: 65px;
+    
+}
+
+
+.modal-delete {
+    background-color: #fff;
+    padding: 80px 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 30%;
+   
+}
+
+.modal-delete p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #333;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+
+button.delete {
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.approve {
+    background-color: #2d9a47;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.delete:hover {
+    background-color: #bc0a0a;
+}
+
+button.approve:hover {
+    background-color: #148918;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+
+#addcustomer {
+    background-color: #f5f5f5;
+    padding: 15px 25px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #979797; 
+    margin-left: 25%;
+    margin-top: 0.5%;
+}
+
+#addcustomer h1 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'K2D', sans-serif;
+    
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    flex: 0 0 120px; /* กำหนดความกว้างของ label */
+    font-family: Maitree;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.form-group textarea {
+    flex: 1; /* ให้ textarea ขยายเต็มพื้นที่ที่เหลือ */
+    padding: 5px;
+    border: 1px solid #e1dfdf;
+    border-radius: 4px;
+    font-family: 'Maitree', sans-serif;
+    background-color: #ffffff;
+    font-size: 16px;
+}
+
+
+.form-group input[type="text"], 
+.form-group input[type="datetime-local"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #e1dfdf;
+    border-radius: 4px;
+    font-family: 'Maitree', sans-serif;
+    background-color: #ffffff;
+    font-size: 15px;
+}
+
+
+.back-link {
+    color: #a20c8c;
+    margin-left: 73%;
+    font-family: Maitree;
+}
+
+.back-link:hover {
+   color: #cc2121;
+}
+
+.form-group select {
+    padding: 5px;
+    max-height: 200px; 
+    overflow-y: auto;
+    width: 100%;
+    display: block; 
+}
+
+
+.selected-product-list {
+    padding:  5px;
+    border: 1px solid #e1dfdf;
+    border-radius: 4px;
+    font-family: 'Maitree', sans-serif;
+    background-color: #ffffff;
+    font-size: 14px;
+    max-height: 100px; 
+    overflow-y: auto; 
+   
+}
+
+#addProduct {
+    position: absolute;
+    font-size: 13px;
+    margin-left: 46%;
+    margin-top: 4%;
+    padding: 2px 3px;;
+    
+}
+
+
+.remove-btn {
+    color: red;
+    cursor: pointer;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 10px;
+    font-family: 'Maitree', sans-serif;
+}
+
+.product-number {
+    margin-right: 10px;
+}
+
+
+.product-amount {
+    padding: 3px;
+}
+
+.product-amount-text {
+    margin-left: 4px;
+}
+
+
+/* CSS สำหรับ SweetAlert2 */
+.swal-title {
+    font-size: 18px; 
+    font-family: 'Maitree', sans-serif;
+}
+
+.swal-confirm-button {
+    font-size: 14px; 
+    padding: 10px 20px; 
+}
+
+.swal-container {
+    font-size: 16px; 
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+   
+}
+.product-summary {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid #b9b9b9;
+
+}
+.product-detail,
+.product-amount {
+    padding: 5px;
+    margin-left: 2px;
+}
+.additional-details, .additional-amounts {
+    padding: 5px 0;
+    border-bottom: 1px solid #d1d1d1; 
+}
+.details-link i {
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+.more-info {
+   margin-top: 1%;
+}
+
+.amount-box {
+    display: inline-block;
+    padding: 1px 10px;
+    border: 1px solid #b4b4b4; 
+    border-radius: 4px; 
+    
+}
+
+
+#error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 35%;
+}
+
+.status-box {
+    display: inline-block;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.status-waiting {
+    color: #000000;
+    border: 1px solid #1d1d1d;
+    background-color: #eaeaea;
+    font-weight: bold;
+}
+
+.status-in-progress {
+    color:  #e2500c;
+    border: 1px solid #1d1d1d;
+    background-color: #eaeaea;
+    font-weight: bold;
+}
+
+.status-completed {
+    color: #0ba431;
+    border: 1px solid #1d1d1d;
+    background-color: #eaeaea;
+    font-weight: bold;
+}
+
+.status-shipped {
+    color: #1878b9;
+    border: 1px solid #1d1d1d;
+    background-color: #eaeaea;
+    font-weight: bold;
+}
+
+.selected-product-list {
+    list-style-type: decimal; 
+    padding-left: 40px;
+    
+}
+
+.selected-product-list li {
+    margin-bottom: 5px;
+    padding-left: 15px; 
+}
+
+.remove-product {
+    color: red;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* กำหนดความกว้างและความสูงของ select2 dropdown */
+.select2-container .select2-selection--single {
+    height: 25px; /* ความสูงของ dropdown */
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: black; /* สีของตัวอักษร */
+    line-height: 20px; /* ระยะห่างระหว่างบรรทัด */
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 20px; /* ความสูงของลูกศร dropdown */
+}
+.select2-dropdown {
+    font-size: 13px; /* ขนาดตัวอักษรใน dropdown */
+}
+
